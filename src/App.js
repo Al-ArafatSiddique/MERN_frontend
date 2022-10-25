@@ -1,13 +1,16 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import NewPlace from './places/pages/NewPlace';
+import MainNavigation from './shared/components/Navigation/MainNavigation';
 import User from './user/pages/User';
 
 
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
+        <MainNavigation/>
+      <main>
+        <Routes>
         <Route path='/'>
           <Route index element={<User/>} />
         </Route>
@@ -16,7 +19,11 @@ function App() {
         </Route>
         <Route path='*' element={<h1>Not Found</h1>}/>
       </Routes>
+
+      </main>
+      
     </BrowserRouter>
+    
   );
 }
 
