@@ -42,4 +42,8 @@
     .main-navigation__header-nav {
       display: block;
     }
+
+    .main-navigation__drawer-nav {
+      display: none;
+    }
   }
