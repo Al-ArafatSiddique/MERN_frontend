@@ -11,12 +11,8 @@ function App() {
         <MainNavigation/>
       <main>
         <Routes>
-        <Route path='/'>
-          <Route index element={<User/>} />
-        </Route>
-        <Route path='/places'>
-          <Route path='new' element={<NewPlace/>} />
-        </Route>
+        <Route path='/' element={<User/>}/>
+        <Route path='/places/new' element={<NewPlace/>} />
         <Route path='*' element={<h1>Not Found</h1>}/>
       </Routes>
 
